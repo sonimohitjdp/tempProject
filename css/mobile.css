@@ -1,4 +1,4 @@
-@media(max-width: 500px){
+
   .nav-bar{
     flex-direction: column;
   }
@@ -22,25 +22,39 @@
     justify-content: space-evenly;
   }
 
-  #contact {
+  #contact{
     flex-direction: column;
-    width:100vw;
+    text-align:center;
+    padding: 0;
   }
-  .contact-form h2, .contact-form p{
+  .contact-form h2,
+  .contact-form p{
     text-align:center;
   }
-  .form-group{
-    margin:auto;
-    display: block;
-    width: 80%;
+  .form-group {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
   }
+  .form-label {
+    display: inline;
+    flex:1;
+  }
+  .form-input {
+    padding: 0;
+    flex:4;
+  }
+  
   .contact-form form input {
-    margin-top: 0.2rem;
-    padding: 0.4rem 0;
+    margin-top: 0;
+    padding: 0.3rem;
     border-radius: 5%;
-    width: 100%;
+    width: 50%;
   }
-  .maps{
-    
+  .contact-form form textarea{
+    margin-left: 0.1rem;
   }
-}
+
+  
