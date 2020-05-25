@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+p{
+  margin: 0.75rem 0;
+}
+
+body{
+  font-family: 'Roboto',sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* =======Utility Class======== */
+.p-1 {padding: 1rem;}
+.p-2 {padding: 2rem;}
+.p-3 {padding: 3rem;}
+
+.ptop-1 {padding-top: 1rem;}
+.ptop-2 {padding-top: 2rem;}
+.ptop-3 {padding-top: 3rem;}
+
+.pbottom-1 {padding-bottom: 1rem;}
+.pbottom-2 {padding-bottom: 2rem;}
+.pbottom-3 {padding-bottom: 3rem;}
+
+.py-1 {padding-top: 1rem; padding-bottom:1rem;}
+.py-2 {padding-top: 2rem; padding-bottom:2rem;}
+.py-3 {padding-top: 3rem; padding-bottom:3rem;}
+
+
+.text-primary{
+  color: #93cb52;
+}
+.bg-primary{
+  background: #7ab436;
+}
+
+.bg-dark{
+  background: #333;
+  color: #fff;
+}
+
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+}
+
+.l-heading{
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn{
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border:none;
+  border-radius: 5%;
+}
+
+.btn-dark{
+  background: #333;
+  color: #fff;
+}
+
+.btn:hover{
+  background: #7ab436;
+}
+
+
+
+
+/* Navigation Bar */
+.nav-bar{   
+  position: sticky;
+  top:0;
+  z-index:1;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;  
+  
+  background: #333;
+  padding: 1rem;
+}
+
+
+.nav-bar ul{
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+.nav-bar ul li a:hover{
+  background-color: #93cb52;
+  padding: 0.75rem;
+  border-radius: 10%;
+}
+
+/* Header - Showcase */
+.showcase{
+  background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+}
+
+.showcase-content{
+  /* To apply overlay, we use div inside other div
+  Parent div displays the image, since child div appears in front we associate text with it and 
+  background transparency on this second div so that the text is not affected while applying overlay.
+  treat overlay as a curtain
+*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  padding: 0 2rem;
+}
+
+/* Section - What We Do */
+
+.container{
+  text-align:center;
+  padding: 2rem 1rem;
+}
+.container h2{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.item-container{
+  display:flex;
+  padding-bottom: 1.5rem;
+}
+.item{
+  padding: 1rem 2rem;
+  line-height: 1.5;
+  flex:1;
+}
+.icon{
+  background: #7ab436;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+
+/* Section: WHO */
+#who{
+  display: flex;
+}
+
+
+.who-img{
+  background: #333 url('../img/people.jpg') no-repeat center center/cover;
+  flex:1;
+}
+.who-text{
+  flex:1;
+  line-height: 1.6;
+}
+.who-text h3{
+  font-size: 1rem;
+}
+.who-list{
+  list-style: none;
+}
+
+/* Section: Clients */
+#clients .items{
+  display:flex; 
+  justify-content: space-evenly;
+}
+
+#clients .items img{
+  width: 50%;
+}
+
+/* Section: Contact */
+#contact{
+  display: flex;
+}
+
+#contact #maps,
+#contact .contact-form
+{
+  flex:1;
+}
+
+.contact-form form label{
+  display: block;
+}
+.contact-form form input {
+  margin-top: 0.2rem;
+  padding: 0.4rem 0;
+  border-radius: 5%;
+  width: 80%;
+}
+ 
+
