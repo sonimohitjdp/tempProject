@@ -1,0 +1,46 @@
+@media(max-width: 500px){
+  .nav-bar{
+    flex-direction: column;
+  }
+  .nav-bar .logo{
+    margin-bottom: 1rem;
+  }
+
+  .item-container{
+    flex-direction: column;
+  }
+
+  .who-img{
+    display: none;
+  }
+  .who-text{
+    text-align: center;
+  }
+
+  #clients .items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #contact {
+    flex-direction: column;
+    width:100vw;
+  }
+  .contact-form h2, .contact-form p{
+    text-align:center;
+  }
+  .form-group{
+    margin:auto;
+    display: block;
+    width: 80%;
+  }
+  .contact-form form input {
+    margin-top: 0.2rem;
+    padding: 0.4rem 0;
+    border-radius: 5%;
+    width: 100%;
+  }
+  .maps{
+    
+  }
+}
